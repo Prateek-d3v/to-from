@@ -1,0 +1,2092 @@
+[
+    {
+      "question": "I need a Mother's day gift. She is a very well-to-do woman who loves dining out and jewelry. She likes to play golf, hiking, and spending time with her grand kids. The budget is $50-$100.",
+      "attributes": [
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Journals, Stationary, & Gift Wrap"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Candles, Diffusers & Home Fragrance"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Handbags"
+        },
+        {
+          "name": "T_Handbags_Md"
+        },
+        {
+          "name": "SC_Handbags"
+        },
+        {
+          "name": "T_Handbags_Md"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Outdoor"
+        },
+        {
+          "name": "T_Camping & Hiking Gear"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Botanicals - Fresh Florals"
+        }
+      ]
+    },
+    {
+      "question": "Hi, i'm looking for 40th birthday gift ideas around $300 each. These are both for friends that I've known since college. Steph is half french, half chinese, from hong kong. She loves gourmet food, travel and woo-woo self care. She likes things that are interesting and fresh. Look for gifts for Steph that have been listed in a gift guide by either vogue or goop ",
+      "attributes": [
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Skin Care"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Handbags"
+        },
+        {
+          "name": "T_Handbags_Sm"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Jewelry"
+        },
+        {
+          "name": "T_Bracelets"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Skin Care"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Jewelry"
+        },
+        {
+          "name": "T_Charms & Pendants"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Small Accessories"
+        },
+        {
+          "name": "T_Jewelry Storage"
+        }
+      ]
+    },
+    {
+      "question": "It’s my nephews birthday next week. Please find a popular gift for a 12 year old. He likes technology, books, art.",
+      "attributes": [
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Books & School Supplies"
+        },
+        {
+          "name": "T_Kids' Engineering"
+        },
+        {
+          "name": "T_Gadgets"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Tech"
+        },
+        {
+          "name": "DE_Kids' Tech & Electronics"
+        },
+        {
+          "name": "SC_Kids' Arts & Music"
+        },
+        {
+          "name": "T_Tech Accessories"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Clothing & Accessories"
+        },
+        {
+          "name": "T_Kids' Clothing"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "T_Art & Crafting"
+        },
+        {
+          "name": "SC_Experiences"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Tech"
+        },
+        {
+          "name": "T_Gadgets"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Tech"
+        },
+        {
+          "name": "T_Gadgets"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Tech"
+        },
+        {
+          "name": "T_Gadgets"
+        }
+      ]
+    },
+    {
+      "question": "I'm looking for a Valentine's gift for a male, 30 years old that is something unique. He likes history, law, animals, and nature. I prefer it's under $50.",
+      "attributes": [
+        {
+          "name": "SC_Wellness"
+        },
+        {
+          "name": "T_Emergency Essentials"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Games"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Coffee, Tea & Hot Chocolate"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Journals, Stationary, & Gift Wrap"
+        },
+        {
+          "name": "T_Journals, Stationary, & Gift Wrap"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Slippers & Socks"
+        },
+        {
+          "name": "SC_Lounge Accessories"
+        },
+        {
+          "name": "C_Accessories"
+        }
+      ]
+    },
+    {
+      "question": "Hello! I would like to send a thank you gift and note to two of my paramedic instructors now that I have completed the program. I would like to spend $100-150 for each person so less than $300 total. They are both paramedics who are primarily instructors now. If the note could express in someway the exceptional amount of gratitude I feel for helping me through an exceptionally difficult program and being so supportive. I don’t think flowers or wine are appropriate so something else thoughtful. I’m having a hard time coming up with ideas",
+      "attributes": [
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Jewelry"
+        },
+        {
+          "name": "T_Bracelets"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Fitness"
+        },
+        {
+          "name": "T_Gadgets"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Backyard"
+        },
+        {
+          "name": "T_Hammocks"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Wellness"
+        },
+        {
+          "name": "T_Drinkware"
+        },
+        {
+          "name": "SC_Fitness"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "T_Fitness Essentials"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Savory Snacks"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Outdoor"
+        },
+        {
+          "name": "T_Picnic Essentials"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Savory Snacks"
+        },
+        {
+          "name": "T_Cheese & Charcuterie"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Savory Snacks"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "SC_Travel"
+        },
+        {
+          "name": "T_Travel Blankets & Pillows"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Drinkware"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Sleep Essentials"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Cheese & Charcuterie"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Botanicals - Fresh Plants"
+        }
+      ]
+    },
+    {
+      "question": "Can you please provide some options for a Father's Day Gift? My husband spends a lot of time on a recliner. A high quality wearable blanket that doesn’t slip off. Not too long so he doesn’t trip over. Materials that’s all season. Budget: $100",
+      "attributes": [
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Throws & Blankets"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Throws & Blankets"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Throws & Blankets"
+        }
+      ]
+    },
+    {
+      "question": "Can you please help me find a 40th birthday gift for a man who loves whiskey and cocktail making? Budget: $40",
+      "attributes": [
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Barware"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Kitchen"
+        },
+        {
+          "name": "T_Cookbooks"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Cocktail Ingredients"
+        },
+        {
+          "name": "T_Liquor"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Drinkware"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "SC_Outdoor"
+        },
+        {
+          "name": "T_Drinkware"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Barware"
+        }
+      ]
+    },
+    {
+      "question": "It’s my nephews birthday next week. Please find a popular gift for a 12 year old. He likes technology, books, art.",
+      "attributes": [
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Books & School Supplies"
+        },
+        {
+          "name": "T_Kids' Engineering"
+        },
+        {
+          "name": "T_Gadgets"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Tech"
+        },
+        {
+          "name": "SC_Kids' Arts & Music"
+        },
+        {
+          "name": "T_Tech Accessories"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Clothing & Accessories"
+        },
+        {
+          "name": "T_Kids' Clothing"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "T_Art & Crafting"
+        },
+        {
+          "name": "SC_Experiences"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Tech"
+        },
+        {
+          "name": "T_Gadgets"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Tech"
+        },
+        {
+          "name": "T_Gadgets"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Tech"
+        },
+        {
+          "name": "T_Gadgets"
+        }
+      ]
+    },
+    {
+      "question": "4 year old girl, best friends with my 4 year old - something personalized, perhaps?",
+      "attributes": [
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Stuffed Toys"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Arts & Music"
+        },
+        {
+          "name": "T_Kids' Crafts"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Clothing & Accessories"
+        },
+        {
+          "name": "T_Kids' Accessories"
+        },
+        {
+          "name": "T_Kids' Accessories"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Clothing & Accessories"
+        },
+        {
+          "name": "T_Pouches"
+        },
+        {
+          "name": "SC_Small Accessories"
+        },
+        {
+          "name": "C_Accessories"
+        }
+      ]
+    },
+    {
+      "question": "7 year old boy, loves sports - especially lacrosse",
+      "attributes": [
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Sports"
+        },
+        {
+          "name": "T_Fitness Essentials"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Clothing & Accessories"
+        },
+        {
+          "name": "T_Kids' Clothing"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "T_Kids' Accessories"
+        },
+        {
+          "name": "SC_Kids' Clothing & Accessories"
+        },
+        {
+          "name": "T_Kids' Clothing"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Clothing & Accessories"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Outdoors"
+        },
+        {
+          "name": "T_Kids' Ride-On Toys & Skates"
+        },
+        {
+          "name": "SC_Kids' Technology"
+        },
+        {
+          "name": "T_Kids' Tech & Electronics"
+        },
+        {
+          "name": "C_Kids"
+        }
+      ]
+    },
+    {
+      "question": "5 year old boy, loves trains",
+      "attributes": [
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Transportation, Vehicles, & Trains"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Clothing & Accessories"
+        },
+        {
+          "name": "T_Kids' Clothing"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Outdoors"
+        },
+        {
+          "name": "T_Kids' Outdoor Games & Toys"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Books & School Supplies"
+        },
+        {
+          "name": "T_Books & Media"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Transportation, Vehicles, & Trains"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Blocks & Building"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Play Structures"
+        }
+      ]
+    },
+    {
+      "question": "Hi! My son’s 3rd birthday is coming up. Can you send over some gift options? He loves firetrucks, puppies, Paw Patrol, trains, art, and music/dancing",
+      "attributes": [
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Outdoors"
+        },
+        {
+          "name": "T_Kids' Outdoor Games & Toys"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Transportation, Vehicles, & Trains"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Transportation, Vehicles, & Trains"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Blocks & Building"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Play Structures"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Arts & Music"
+        },
+        {
+          "name": "T_Kids' Music"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Technology"
+        },
+        {
+          "name": "T_Kids' Tech & Electronics"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Arts & Music"
+        },
+        {
+          "name": "T_Kids' Music"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Play Structures"
+        }
+      ]
+    },
+    {
+      "question": "Need to find mothers day gifts for my sister in Orlando who has two young girls, is going through a divorce, loves tennis.Budget: $50",
+      "attributes": [
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Games"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Coffee, Tea & Hot Chocolate"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Kitchen Gadgets & Tools"
+        },
+        {
+          "name": "SC_Kitchen"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Coffee, Tea & Hot Chocolate"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Sleep Essentials"
+        }
+      ]
+    },
+    {
+      "question": "I need mother's day ideas for my mom and my mother-in-law and my neighbor. My mom: incredibly generous, loves gardening, animals, birds. She is healthy and walks a lot. Constantly learning and always reading new books. Enjoys sentimental things too but is trying to \"clean stuff out.\" She loves the outdoors and traveling and is very active. She and my dad are headed to England this fall. She goes by \"Grandma\" My mother-in-law: loves fancy things and does ballroom dancing as a hobby (at age 70!). Just bought a new home. Enjoys sentimental things and photos of her family and grandkids. Still working hard as an accountant of her own firm (was the first black female CPA in the state of Nebraska back in the 80s!) and lives in Los Angeles. We call her \"Papa Grandma\" or \"Grandma Hustle\" My neighbor: is kind of like a surrogate mom to us and grandma \"Nana Eva\" to our kids. Would love to get her something thoughtful that shows how much we love her. She enjoys high quality things (has gifted us a very nice olive oil, french milled lavender soap, a beautiful potted plant).",
+      "attributes": [
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Honey, Syrup & Jam"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "SC_Lounge Accessories"
+        },
+        {
+          "name": "T_Slippers & Socks"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "T_Camping & Hiking Gear"
+        },
+        {
+          "name": "SC_Outdoor"
+        },
+        {
+          "name": "T_Indoor Decor"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Throws & Blankets"
+        },
+        {
+          "name": "T_Outdoor Decor"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Outdoor"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Skin Care"
+        },
+        {
+          "name": "C_Lifestyle"
+        }
+      ]
+    },
+    {
+      "question": "I need to send a really nice house gift to friends who recently hosted us. Can you send some ideas?",
+      "attributes": [
+        {
+          "name": "T_Cheese & Charcuterie"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Games"
+        },
+        {
+          "name": "T_Cheese & Charcuterie"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Table Top"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Games"
+        },
+        
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Books & Media"
+        },
+        {
+          "name": "T_Savory Snacks"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Candy & Chocolate"
+        },
+        {
+          "name": "C_Home"
+        }
+      ]
+    },
+    {
+      "question": "Look for a Father’s Day gift for my husband from his 11 year old and from me. He is 41 and enjoys cigars, camping, smoking meats like bbq.",
+      "attributes": [
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_BBQ"
+        },
+        {
+          "name": "SC_Backyard"
+        },
+        {
+          "name": "T_Journals, Stationary, & Gift Wrap"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Sauces & Condiments"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Backyard"
+        },
+        {
+          "name": "T_Gardening"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Backyard"
+        },
+        {
+          "name": "T_Hammocks"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Gadgets"
+        },
+        {
+          "name": "SC_Outdoor"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_BBQ"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Outdoor"
+        },
+        {
+          "name": "T_Picnic Essentials"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_BBQ"
+        }
+      ]
+    },
+    {
+      "question": "Mother's Day gifts for stylish mother, budget over $100, ship to saved location at 37 King Street, New York, NY 10014 within a week; thoughtful gift, not too expensive, for a personal stylist who loves fashion and nice little things.",
+      "attributes": [
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Oils & Vinegars"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Skin Care"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "SC_Jewelry"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "T_Necklaces"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Lounge Accessories"
+        },
+        {
+          "name": "T_Slippers & Socks"
+        }
+      ]
+    },
+    {
+      "question": "Gift for someone entering college - 28-year-old friend going to college as an adult, budget over $200, ship to saved location at 3704 Hanover Street, Dallas, Texas 75225 within a week; keep in mind tax and shipping fees will be added at checkout.",
+      "attributes": [
+        {
+          "name": "SC_Home Care"
+        },
+        {
+          "name": "T_Home Care Misc."
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Travel"
+        },
+        {
+          "name": "T_Travel Accessories"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Handbags"
+        },
+        {
+          "name": "T_Handbags_Lg"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Fitness"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "T_Fitness Essentials"
+        },
+        {
+          "name": "T_Savory Snacks"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Coffee, Tea & Hot Chocolate"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Savory Snacks"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Savory Snacks"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Cheese & Charcuterie"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Savory Snacks"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Tech Accessories"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Small Accessories"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Travel"
+        },
+        {
+          "name": "T_Tech Accessories"
+        }
+      ]
+    },
+    {
+      "question": "For the 6-year-old's birthday, in addition to the skateboard and Mario game for the Switch, consider smaller surprise items like karate-themed action figures or gear, a soccer ball or jersey, additional video games for the Switch (perhaps Minecraft or other Mario titles), books from the \"Dragon Masters\" series, building kits like LEGO sets or robotics kits, magnetic tiles expansion sets, and slime-making kits. Ship to 141 Northwest 74th Street, Seattle, Washington 98117.",
+      "attributes": [
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Arts & Music"
+        },
+        {
+          "name": "T_Kids' Music"
+        },
+        {
+          "name": "SC_Kids' Technology"
+        },
+        {
+          "name": "T_Kids' Tech & Electronics"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' STEM - Science, Technology, Engineering, & Math"
+        },
+        {
+          "name": "T_Kids' Science & Nature"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Arts & Music"
+        },
+        {
+          "name": "T_Kids' Crafts"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Clothing & Accessories"
+        },
+        {
+          "name": "T_Kids' Accessories"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Arts & Music"
+        },
+        {
+          "name": "T_Kids' Crafts"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Kitchen"
+        },
+        {
+          "name": "T_Kids' Daily Essentials"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Books & School Supplies"
+        },
+        {
+          "name": "T_Kids' Non-Fiction Books"
+        },
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Sports"
+        },
+        {
+          "name": "T_Fitness Essentials"
+        }
+      ]
+    },
+    {
+      "question": "Birthday gift for sister-in-law Ana, 34, enjoys reading, appreciates understated and unique items, has an 8-month-old son; budget $100-$200, ship to 11 Susan Court, Syosset, New York 11791, to arrive by specific date 3/26/24.",
+      "attributes": [
+        
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Drinkware"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "SC_Lounge Accessories"
+        },
+        {
+          "name": "T_Slippers & Socks"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "T_Handbags_Sm"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Handbags"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Jewelry"
+        },
+        {
+          "name": "T_Jewelry Storage"
+        },
+        {
+          "name": "T_Necklaces"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Jewelry"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Botanicals - Faux Wreaths & Swags"
+        }
+      ]
+    },
+    {
+      "question": "I need a gift for the member - She is a British person who likes things from America. She’s into tennis, just got married, and is trying to get pregnant. under $50. TYO - a088W00000hUHP2QAO",
+      "attributes": [
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Savory Snacks"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Coffee, Tea & Hot Chocolate"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Fitness"
+        },
+        {
+          "name": "T_Strength"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Handbags"
+        },
+        {
+          "name": "T_Handbags_Md"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Fitness"
+        },
+        {
+          "name": "T_Tennis"
+        },
+        {
+          "name": "SC_Jewelry"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "T_Bracelets"
+        },
+        {
+          "name": "T_Pouches"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Small Accessories"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Earrings"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Jewelry"
+        },
+        {
+          "name": "T_Necklaces"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Jewelry"
+        },
+        {
+          "name": "T_Journals, Stationary, & Gift Wrap"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Emergency Essentials"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Wellness"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "T_Skin Care"
+        }
+      ]
+    },
+    {
+      "question": "Hi I need a gift for 30’s couple, 1 son who is 2 1/2 named Oscar. They are moving their family to Chicago and have never lived here. He is a prolific reader. They like craft beer. If it’s food - definitely on the healthier side options. They like museums, symphonies, etc. Budget $100-$200 the member reviewed the first options. they said, \"Is there a membership that gets you into multiple museums in Chicago - instead of just one?\" ",
+      "attributes": [
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Serveware"
+        },
+        {
+          "name": "DA_Hidden Colorway"
+        },
+        {
+          "name": "SC_Experiences"
+        },
+        {
+          "name": "T_Misc Experiences"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Outdoor"
+        },
+        {
+          "name": "T_Beach Essentials"
+        }
+      ]
+    },
+    {
+      "question": "need a gift for the member He is 70 years old and very active. He loves fishing, and food (especially spicy food), he’s an Oregon State Beavers and San Francisco 49ers fan, loves pickleball, gardening, feeding birds, does woodworking, and has lots of grandchildren.",
+      "attributes": [
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Games"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "T_Pickle Ball"
+        },
+        {
+          "name": "SC_Fitness"
+        },
+        {
+          "name": "SC_Spectator Sports"
+        },
+        {
+          "name": "T_Professional Sports"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "Relationship: Employee"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Spectator Sports"
+        },
+        {
+          "name": "T_Professional Sports"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Drinkware"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Candy & Chocolate"
+        }
+      ]
+    },
+    {
+      "question": "I've been dating my boyfriend for a little over 2 years now but we've known each other for longer. In terms of presents, he prefers luxury items or useful gifts i.e. dash cams. I got him a dash cam last year which he loved, and the year before that I got him an expensive watch. He's also gotten me expensive gifts before so I really want to get him something special. His best friend got him a wallet so that's out of the question. Any advice or thoughts would be greatly appreciated.",
+      "attributes": [
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Travel"
+        },
+        {
+          "name": "T_Duffles"
+        },
+        {
+          "name": "SC_Fitness"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "T_Fitness Essentials"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Barware"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Liquor"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Travel"
+        },
+        {
+          "name": "T_Duffles"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Tech"
+        },
+        {
+          "name": "T_Gadgets"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Fitness"
+        },
+        {
+          "name": "T_Fitness Bags & Accessories"
+        }
+      ]
+    },
+    {
+      "question": "Hello, I just started exclusively dating this girl and even though we have only seen each other 3 times she has already given me a few gifts ($30 wine, cookies/snacks). I could use some help thinking of gifts for her. I am jewish and from Miami so I am thinking of giving her some chocolate matzah and ordering a Cuban pastry before our next date on Saturday so she can experience some of the things in my background, but I would like to give her something that doesn't cost under $10. We are in LA and she is from China (I believe came to the US 3 years ago). She likes podcasts, reading, museums, volunteering, photography, hiking, nature, traveling, snowboarding. She is currently reading the Percy Jackson series. My buddy gave me the idea of getting her a fancy candle but I read there might be some Chinese superstition behind that making it possibly a dicey idea. What are some other ideas that might be good? Forgot to mention I thought about getting her flowers since her name is a flower but she mentioned not liking flowers as a gift because she would rather they just stay alive.",
+      "attributes": [
+        {
+          "name": "T_Games"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Journals, Stationary, & Gift Wrap"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "C_Accessories"
+        },
+        {
+          "name": "SC_Jewelry"
+        },
+        {
+          "name": "T_Necklaces"
+        },
+        {
+          "name": "T_Coffee, Tea & Hot Chocolate"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "C_Home"
+        }
+      ]
+    },
+    {
+      "question": "Need help in finding gifts for a little boy: \"I am trying to build a Santa list for my 4-year-old son. He loves cars and anything vehicle-related. However, we are trying to add in a bunch of learning and educational toys (he’s asked about robotics) that can supplement his sizable car toy collection.\" YOT-107611 conatct user on email email:mary.trigo@yohana.com",
+      "attributes": [
+        
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' STEM - Science, Technology, Engineering, & Math"
+        },
+        {
+          "name": "T_Kids' Science & Nature"
+        },
+       
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Play Structures"
+        },
+        
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' Imaginative Play"
+        },
+        {
+          "name": "T_Kids' Blocks & Building"
+        },
+        
+        {
+          "name": "C_Kids"
+        },
+        {
+          "name": "SC_Kids' STEM - Science, Technology, Engineering, & Math"
+        },
+        {
+          "name": "T_Kids' Science & Nature"
+        }
+        
+      ]
+    },
+    {
+      "question": "Hi my boss is looking for white elephant gifts for neighbors, lets give a range of options from the lowest price, mid, and high price range YOT-105039 contact user on phone phone: {+14242671575 true}",
+      "attributes": [
+        
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Candles, Diffusers & Home Fragrance"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Candy & Chocolate"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Candy & Chocolate"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Salt, Spices & Herbs"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Oils & Vinegars"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Botanicals - Fresh Plants"
+        },
+        
+        {
+          "name": "SC_Kitchen"
+        },
+        
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Kitchen Gadgets & Tools"
+        },
+        
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Games"
+        },
+        
+        {
+          "name": "C_Home"
+        },
+        
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Specific Occasion"
+        },
+        
+        {
+          "name": "T_Winter Holidays"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Coffee, Tea & Hot Chocolate"
+        },
+        
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Specific Occasion"
+        },
+        {
+          "name": "T_Winter Holidays"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Serveware"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Decor"
+        },
+        {
+          "name": "T_Botanicals - Fresh Plants"
+        },
+        {
+          "name": "SC_Beauty"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "T_Bath & Body"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Coffee, Tea & Hot Chocolate"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Games"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Slippers & Socks"
+        },
+        {
+          "name": "SC_Lounge Accessories"
+        },
+        {
+          "name": "C_Accessories"
+        }
+      ]
+    },
+    {
+      "question": "Help find gifts for preschool teachers with a minimal budget YOT-108663 conatct user on email email:mary.trigo@yohana.com",
+      "attributes": [
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "T_Kitchen Gadgets & Tools"
+        },
+        {
+          "name": "SC_Kitchen"
+        },
+        {
+          "name": "SC_Entertaining"
+        },
+        {
+          "name": "T_Games"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "C_Lifestyle"
+        },
+        {
+          "name": "SC_Specific Occasion"
+        },
+        {
+          "name": "T_Teacher"
+        },
+        {
+          "name": "C_Home"
+        },
+        {
+          "name": "SC_Food & Drink"
+        },
+        {
+          "name": "T_Coffee, Tea & Hot Chocolate"
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,17 @@
+{
+  "relationships": [
+    "Friend",
+    "Spouse / Partner",
+    "Girlfriend / Boyfriend",
+    "Parent",
+    "Child (Adult)",
+    "Sibling",
+    "Boss",
+    "Employee",
+    "Co-worker",
+    "Client",
+    "Teacher",
+    "Other",
+    "Host / Hostess"
+  ]
+}
