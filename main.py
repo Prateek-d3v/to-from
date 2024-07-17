@@ -1,29 +1,14 @@
 import json
 
-# Function to extract attributes from input JSON file
-def extract_attributes(input_file, output_file):
-    with open(input_file, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    extracted_data = []
-    for item in data:
-        attribute_name = item.get("Attribute Name", "")
-        synonyms = item.get("Synonyms", "")
-        long_description = item.get("Long Description", "")
-        extracted_data.append({
-            "Attribute Name": attribute_name,
-            "Synonyms": synonyms,
-            "Long Description": long_description
-        })
-    
-    # Write extracted data to output JSON file
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(extracted_data, f, indent=4)
+# Load the data from the input JSON file
+with open(r'C:\Users\NAGA PRASSAD\Desktop\to-from\Kloudstax\Cleaned_GPT_Attributes.json', 'r') as infile:
+    data = json.load(infile)
 
-# Example usage:
-input_json_file = r'E:\D3VTech\to-from\Kloudstax\Cleaned_GPT_Attributes.json' 
-output_json_file = 'Attributes.json'  # Replace with desired output JSON file path
+# Extract the required data
+extracted_data = {item["Attribute Name"]: item["Long Description"] for item in data}
 
-extract_attributes(input_json_file, output_json_file)
+# Write the extracted data to a new JSON file
+with open('extracted_data.json', 'w') as outfile:
+    json.dump(extracted_data, outfile, indent=4)
 
-print(f"Extraction complete. Extracted data saved to '{output_json_file}'.")
+print("Data extracted and written to extracted_data.json")
