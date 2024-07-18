@@ -1,14 +1,34 @@
-import json
+import os
+import vertexai
+from vertexai.generative_models import GenerativeModel
+import constants as const
+import helper as helper
 
-# Load the data from the input JSON file
-with open(r'C:\Users\NAGA PRASSAD\Desktop\to-from\Kloudstax\Cleaned_GPT_Attributes.json', 'r') as infile:
-    data = json.load(infile)
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = const.SA_ACCOUNT
 
-# Extract the required data
-extracted_data = {item["Attribute Name"]: item["Long Description"] for item in data}
+vertexai.init(project=const.PROJECT_ID, location=const.VERTEX_AI_LOCATION)
 
-# Write the extracted data to a new JSON file
-with open('extracted_data.json', 'w') as outfile:
-    json.dump(extracted_data, outfile, indent=4)
+model = GenerativeModel(
+    model_name=const.VERTEX_AI_MODEL,
+    system_instruction=[const.SYSTEM_INSTRUCTIONS],
+)
 
-print("Data extracted and written to extracted_data.json")
+attributes = helper.read_text_file(const.ATTRIBUTES_PATH)
+occasions = helper.read_text_file(const.OCCASIONS_PATH)
+relations = helper.read_text_file(const.RELATIONS_PATH)
+
+
+prompt = """
+Attributes:
+{attributes}
+Occasions:
+{occasions}
+Relations:
+{relations}
+Query: Look for a Father’s Day gift for my husband from his 11 year old and from me. He is 41 and enjoys cigars, camping, smoking meats like bbq.
+"""
+
+contents = [prompt]
+
+response = model.generate_content(contents)
+print(response.text)
