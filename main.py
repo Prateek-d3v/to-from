@@ -4,31 +4,42 @@ from vertexai.generative_models import GenerativeModel
 import constants as const
 import helper as helper
 
+# Set the environment variable for Google Application Credentials
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = const.SA_ACCOUNT
 
+# Initialize Vertex AI
 vertexai.init(project=const.PROJECT_ID, location=const.VERTEX_AI_LOCATION)
 
+# Initialize the generative model
 model = GenerativeModel(
     model_name=const.VERTEX_AI_MODEL,
-    system_instruction=[const.SYSTEM_INSTRUCTIONS],
+    system_instruction=const.SYSTEM_INSTRUCTIONS
 )
 
+# Read the attributes, occasions, and relations from text files
 attributes = helper.read_text_file(const.ATTRIBUTES_PATH)
 occasions = helper.read_text_file(const.OCCASIONS_PATH)
 relations = helper.read_text_file(const.RELATIONS_PATH)
 
-
-prompt = """
+# Define the prompt template
+prompt_template = """
 Attributes:
-{attributes}
+{0}
 Occasions:
-{occasions}
+{1}
 Relations:
-{relations}
-Query: Look for a Father’s Day gift for my husband from his 11 year old and from me. He is 41 and enjoys cigars, camping, smoking meats like bbq.
+{2}
+Query: {3}
 """
 
-contents = [prompt]
+# Input loop for querying the model
+query = input("Query: ")
+while query != 'q':
+    prompt = prompt_template.format(attributes, occasions, relations, query)
+    response = model.generate_content([prompt])
+    print(response.text)
+    
+    # Ask for a new query
+    query = input("User Query: ")
 
-response = model.generate_content(contents)
-print(response.text)
+print('Bye!')
