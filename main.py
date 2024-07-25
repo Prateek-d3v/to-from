@@ -59,7 +59,7 @@ def get_ids(names, data, key_name):
     return ids
 
 # Input for querying the model
-query = "Can you please provide some options for a Father's Day gift? My husband spends a lot of time on a recliner. A high quality wearable blanket that doesn’t slip off. Not too long so he doesn’t trip over. Materials that’s all season. Budget: $100."
+query = "For the 6-year-old's birthday, in addition to the skateboard and Mario game for the Switch, consider smaller surprise items like karate-themed action figures or gear, a soccer ball or jersey, additional video games for the Switch (perhaps Minecraft or other Mario titles), books from the \"Dragon Masters\" series, building kits like LEGO sets or robotics kits, magnetic tiles expansion sets, and slime-making kits."
 prompt = prompt_template.format(attributes, occasions, relations, query)
 response = model.generate_content([prompt])
 
@@ -133,7 +133,7 @@ else:
     if response.status_code == 200:
         products = response.json()
         # Print the list of products
-        # print(json.dumps(products, indent=4))
+        print(json.dumps(products, indent=4))
         product_list = json.dumps(products, indent=4)
     else:
         print(f"API request failed with status code {response.status_code}")
@@ -154,7 +154,7 @@ product_template = '''
 
 if product_list:
     prompt = product_template.format(product_list, query)
-    print(prompt)
+    # print(prompt)
     response = model.generate_content([prompt])
 
     if not response.text:
