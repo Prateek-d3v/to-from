@@ -15,7 +15,6 @@ os.environ['GRPC_VERBOSITY'] = 'ERROR'
 # Optionally, suppress TensorFlow logging messages
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-
 # Initialize Vertex AI
 vertexai.init(project=const.PROJECT_ID, location=const.VERTEX_AI_LOCATION)
 
@@ -59,7 +58,7 @@ def get_ids(names, data, key_name):
     return ids
 
 # Input for querying the model
-query = "For the 6-year-old's birthday, in addition to the skateboard and Mario game for the Switch, consider smaller surprise items like karate-themed action figures or gear, a soccer ball or jersey, additional video games for the Switch (perhaps Minecraft or other Mario titles), books from the \"Dragon Masters\" series, building kits like LEGO sets or robotics kits, magnetic tiles expansion sets, and slime-making kits."
+query = "I'm looking for a birthday gift for my niece. She loves history books, arts and crafts supplies and backpacks, but she doesn't like pink colors or unicorn designs. What would be a great choice within a $40 budget?"
 prompt = prompt_template.format(attributes, occasions, relations, query)
 response = model.generate_content([prompt])
 
@@ -72,19 +71,6 @@ else:
     try:
         # Parse the JSON response
         response_data = json.loads(response_text)
-
-        # Ensure price_range is properly formatted
-        if 'price_range' in response_data:
-            price_range = response_data['price_range']
-            if not price_range:  # Check if the price_range is an empty list
-                response_data['price_range'] = []  # Keep it as an empty list
-            elif isinstance(price_range[0], str):
-                price_str = price_range[0]
-                if '-' in price_str:
-                    price_range = [float(price.replace('$', '')) for price in price_str.split('-')]
-                else:
-                    price_range = [float(price_str.replace('$', '')), float(price_str.replace('$', ''))]
-                response_data['price_range'] = price_range
 
     except json.JSONDecodeError as e:
         print("Error decoding JSON:", str(e))
@@ -133,7 +119,7 @@ else:
     if response.status_code == 200:
         products = response.json()
         # Print the list of products
-        print(json.dumps(products, indent=4))
+        # print(json.dumps(products, indent=4))
         product_list = json.dumps(products, indent=4)
     else:
         print(f"API request failed with status code {response.status_code}")
