@@ -58,7 +58,7 @@ def get_ids(names, data, key_name):
     return ids
 
 # Input for querying the model
-query = "I'm looking for a birthday gift for my niece. She loves history books, arts and crafts supplies and backpacks, but she doesn't like pink colors or unicorn designs. What would be a great choice within a $40 budget?"
+query = "gift for my nephew who is turning 13. He's a sports nut and loves the San Francisci 49ers and also is really into tech."
 prompt = prompt_template.format(attributes, occasions, relations, query)
 response = model.generate_content([prompt])
 
@@ -84,8 +84,8 @@ else:
 
     # Get the price range
     price_range = response_data.get("price_range", [])
-    min_price = int(price_range[0] * 100) if len(price_range) > 0 else ""
-    max_price = int(price_range[1] * 100) if len(price_range) > 1 else ""
+    min_price = int(price_range[0]) * 100 if len(price_range) > 0 and price_range[0].isdigit() else ""
+    max_price = int(price_range[1]) * 100 if len(price_range) > 1 and price_range[1].isdigit() else ""
 
     # print("attributes", attribute_ids)
     # print("occasions", occasion_ids)
@@ -146,4 +146,5 @@ if product_list:
     if not response.text:
         print("Error: Empty response from the model.")
     else:
+        print(type(product_list))
         print(response.text)
