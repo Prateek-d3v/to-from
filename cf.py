@@ -164,7 +164,7 @@ def to_and_from_http(request):
         response_text = json.loads(response.text.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip())
 
 
-        return {"attributes": response_data.get("attributes") ,"response": response_text}
+        return {"attributes": response_data.get("attributes") ,"products": response_text}
 
     return {"error": "No products found."}
 

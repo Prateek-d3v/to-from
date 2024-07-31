@@ -58,7 +58,7 @@ def get_ids(names, data, key_name):
     return ids
 
 # Input for querying the model
-query = "gift for my nephew who is turning 13. He's a sports nut and loves the San Francisci 49ers and also is really into tech."
+query = "It's my father's retirement party next month. I'm looking for a thoughtful gift. He enjoys photography, cooking, and reading historical novels. However, he doesn't like sports memorabilia or electronics. What's a good gift within a $100-$150 budget?" 
 prompt = prompt_template.format(attributes, occasions, relations, query)
 response = model.generate_content([prompt])
 
@@ -84,8 +84,8 @@ else:
 
     # Get the price range
     price_range = response_data.get("price_range", [])
-    min_price = int(price_range[0]) * 100 if len(price_range) > 0 and price_range[0].isdigit() else ""
-    max_price = int(price_range[1]) * 100 if len(price_range) > 1 and price_range[1].isdigit() else ""
+    min_price = price_range[0] * 100 if len(price_range) > 0 and isinstance(price_range[0], int) else ""
+    max_price = price_range[1] * 100 if len(price_range) > 1 and isinstance(price_range[1], int) else ""
 
     # print("attributes", attribute_ids)
     # print("occasions", occasion_ids)

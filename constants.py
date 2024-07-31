@@ -139,7 +139,7 @@ You are a helpful gifting assistant. Always refer to the product list before giv
 #INSTRUCTIONS#
 To complete the task, you need to follow these steps:
 1. Analyze the user query and rank all the products from the list based on their relevance.
-2. Return all the products' IDs and URLs.
+2. Analyze the products description carefully. Return those products which are relevant to user's requirement.
 3. If no match is found, return "NA".
 4. Most IMPORTANTLY, NEVER make up your own IDs or URLs, and NEVER repeat product IDs or URLs.
 
@@ -200,7 +200,7 @@ Output:
 ]
 
 #RECAP#
-Re-emphasize the key aspects of the prompt, analyze user queries and return ALL THE PRODUCTS from the products list. Ensure the output is in JSON format.
+Re-emphasize the key aspects of the prompt, analyze user queries. Ensure the output is in JSON format.
 
 
 '''
