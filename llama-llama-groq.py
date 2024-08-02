@@ -46,7 +46,7 @@ prompt = prompt_template.format(attributes, occasions, relations, query)
 
 client = Groq(
     # api_key=os.environ.get("GROQ_API_KEY"),
-    api_key='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'
+    api_key='...'
 )
 
 chat_completion = client.chat.completions.create(
