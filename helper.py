@@ -35,6 +35,6 @@ def read_text_file(file_path):
     
 
 if __name__ == '__main__':
-    input_path = r'files\Attributes.json'
-    output_path = 'output.txt'
+    input_path = r'C:\Users\NAGA PRASSAD\Desktop\to-from\attributes.txt'
+    output_path = 'attributes.txt'
     minify_json(input_path, output_path)

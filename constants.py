@@ -14,7 +14,7 @@ VERTEX_AI_LOCATION = "us-central1"
 VERTEX_AI_MODEL = "gemini-1.5-pro-001"
 GENERATION_CONFIG = {
     "max_output_tokens": 8192,
-    "temperature": 1,
+    "temperature": 0.1,
     "top_p": 0.95,
 }
 SYSTEM_INSTRUCTIONS = """
@@ -33,9 +33,8 @@ To complete the task, you need to follow these steps:
 Your task is to analyze the user query and return all the relevant attributes where the keywords from the query match either the attribute name, synonyms or description. Also return occasion, relation, and price range.
  If no match is found, return "NA."
 ensuring all values are unique. For example, if 'T_Gardening' appears multiple times, only include it once.
-Based on your knowledge, you can infer additional attributes where appropriate.
 Don’t hesitate to return more attributes. The more you suggest the better it is.
-Most IMPORTANTLY, NEVER repeat Attribute names.
+Most IMPORTANTLY, NEVER EVER repeat Attribute names.
 
 #OUTPUT_FORMAT#
 The output must be in JSON format. The keys must be string and the values must be an array of strings.
