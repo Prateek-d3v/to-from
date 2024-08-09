@@ -3,7 +3,6 @@ import json
 import requests
 import constants as const
 import helper as helper
-from vertexai.generative_models import GenerativeModel
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Set environment variables
@@ -144,31 +143,28 @@ def main(query):
 
         # Filter products using LLaMA model
         if product_list:
-            model = GenerativeModel(
-                model_name=const.VERTEX_AI_MODEL,
-                system_instruction=const.RANK_PRODUCT_SYSTEM_INSTRUCTIONS
-            )
             product_template = f"Products list:\n{product_list}\n\nQuery: {query}"
-            response = model.generate_content([product_template])
+            filtered_response = generate_llama_content(product_template, const.RANK_PRODUCT_SYSTEM_INSTRUCTIONS)
 
-            if response.text:
-                response_text = json.loads(response.text.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip())
-                return {
-                    "attributes": final_response_data.get("attributes"),
-                    "debug": json.loads(product_list),
-                    "products": response_text
-                }
+            if filtered_response:
+                filtered_response = filtered_response.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip()
+                try:
+                    filtered_products = json.loads(filtered_response)
+                    return {
+                        "attributes": final_response_data.get("attributes"),
+                        "debug": json.loads(product_list),
+                        "products": filtered_products
+                    }
+                except json.JSONDecodeError as e:
+                    print("Error decoding filtered JSON:", str(e))
+                    return {"error": "Error decoding filtered JSON"}
             else:
-                print({"error": "Empty response from the model."})
-    return None
+                return {"error": "Empty response from the model."}
+    return {"error": "No result returned."}
 
 # Query input
 query = "It's my father's retirement party next month. I'm looking for a thoughtful gift. He enjoys photography, cooking, and reading historical novels. However, he doesn't like sports memorabilia or electronics. What's a good gift within a $100-$150 budget?"
 
 # Execute the main function
 result = main(query)
-if result:
-    # Print the result in JSON format
-    print(json.dumps(result, indent=4))
-else:
-    print(json.dumps({"error": "No result returned."}, indent=4))
+print(json.dumps(result, indent=4))

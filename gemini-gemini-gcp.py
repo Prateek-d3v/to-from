@@ -31,12 +31,13 @@ occasions = helper.read_text_file(const.OCCASIONS_PATH)
 relations = helper.read_text_file(const.RELATIONS_PATH)
 
 # Load the attributes, occasions, and relations JSON files
-with open('files/sqlout-attribute.json', 'r', encoding='utf-8') as f:
-    attributes_data = json.load(f)
-with open('files/sqlout-occasion.json', 'r', encoding='utf-8') as f:
-    occasions_data = json.load(f)
-with open('files/sqlout-relationship.json', 'r', encoding='utf-8') as f:
-    relations_data = json.load(f)
+def load_json_data(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+attributes_data = load_json_data('files/sqlout-attribute.json')
+occasions_data = load_json_data('files/sqlout-occasion.json')
+relations_data = load_json_data('files/sqlout-relationship.json')
 
 # Define the prompt template
 prompt_template = """
@@ -59,12 +60,7 @@ attributes_split = split_attributes(attributes, 21)
 
 # Function to extract IDs based on names
 def get_ids(names, data, key_name):
-    ids = []
-    for name in names:
-        for item in data:
-            if item[key_name] == name:
-                ids.append(item["id"])
-    return ids
+    return [item["id"] for name in names for item in data if item[key_name] == name]
 
 # Function to process each part of attributes and generate a response
 def process_attributes_part(attributes_part):
@@ -83,90 +79,91 @@ def process_attributes_part(attributes_part):
             return None
     return None
 
-# Input for querying the model
-query = "It's my father's retirement party next month. I'm looking for a thoughtful gift. He enjoys photography, cooking, and reading historical novels. However, he doesn't like sports memorabilia or electronics. What's a good gift within a $100-$150 budget?"
+# Main function to execute the workflow
+def main(query):
+    all_attributes = []
+    final_response_data = None
 
-# Use ThreadPoolExecutor to process the attribute splits concurrently
-final_response_data = None
-with ThreadPoolExecutor(max_workers=10) as executor:
-    futures = [executor.submit(process_attributes_part, attributes_part) for attributes_part in attributes_split]
-    for future in as_completed(futures):
-        result = future.result()
-        if result:
-            final_response_data = result
-            break  # Stop if a valid response is found
+    # Process the attribute splits concurrently
+    with ThreadPoolExecutor(max_workers=21) as executor:
+        futures = [executor.submit(process_attributes_part, attributes_part) for attributes_part in attributes_split]
+        for future in as_completed(futures):
+            result = future.result()
+            if result:
+                # Combine attributes from all threads
+                all_attributes.extend(result.get("attributes", []))
+                if not final_response_data:
+                    final_response_data = result  # Capture the first valid result
 
-if final_response_data:
-    # Extract IDs for attributes, occasions, and relations
-    attribute_ids = get_ids(final_response_data.get("attributes", []), attributes_data, "name")
-    occasion_ids = get_ids(final_response_data.get("occasion", []), occasions_data, "name")
-    relation_ids = get_ids(final_response_data.get("relation", []), relations_data, "name")
+    # Deduplicate the attributes
+    all_attributes = list(set(all_attributes))
 
-    # Get the price range
-    price_range = final_response_data.get("price_range", [])
-    min_price = price_range[0] * 100 if len(price_range) > 0 and isinstance(price_range[0], int) else ""
-    max_price = price_range[1] * 100 if len(price_range) > 1 and isinstance(price_range[1], int) else ""
+    if final_response_data:
+        # Extract occasion and relation IDs
+        attribute_ids = get_ids(all_attributes, attributes_data, "name")
+        occasion_ids = get_ids(final_response_data.get("occasion", []), occasions_data, "name")
+        relation_ids = get_ids(final_response_data.get("relation", []), relations_data, "name")
 
-    # Construct the API request URL with multiple occasionId and relationshipId parameters
-    api_url = (
-        f'https://api.toandfrom.com/v3/recommendation/testing?isApplyFilter=true'
-        f'&minPrice={min_price}'
-        f'&maxPrice={max_price}'
-        f'&attributeIds={",".join(attribute_ids)}'
-    )
+        # Get price range
+        price_range = final_response_data.get("price_range", [])
+        min_price = price_range[0] * 100 if len(price_range) > 0 and isinstance(price_range[0], int) else ""
+        max_price = price_range[1] * 100 if len(price_range) > 1 and isinstance(price_range[1], int) else ""
 
-    # Append multiple occasionId and relationshipId parameters
-    for occasion_id in occasion_ids:
-        api_url += f'&occasionId={occasion_id}'
-    for relation_id in relation_ids:
-        api_url += f'&relationshipId={relation_id}'
+        # Construct the API request URL
+        api_url = (
+            f'https://api.toandfrom.com/v3/recommendation/testing?isApplyFilter=true'
+            f'&minPrice={min_price}&maxPrice={max_price}'
+            f'&attributeIds={",".join(attribute_ids)}'
+        )
 
-    # Call the API and get the list of products
-    headers = {
-        'content-type': 'application/json',
-        'revision': '2024-05-23'
-    }
-    response = requests.get(api_url, headers=headers, timeout=10)
+        # Append occasionId and relationshipId parameters
+        for occasion_id in occasion_ids:
+            api_url += f'&occasionId={occasion_id}'
+        for relation_id in relation_ids:
+            api_url += f'&relationshipId={relation_id}'
 
-    if response.status_code == 200:
-        products = response.json()
-        # Print the list of products
-        product_list = json.dumps(products, indent=4)
-    else:
-        print(f"API request failed with status code {response.status_code}")
-        print(f"API Response text: {response.text}")
+        # Make API call to fetch product recommendations
+        headers = {
+            'content-type': 'application/json',
+            'revision': '2024-05-23'
+        }
+        response = requests.get(api_url, headers=headers, timeout=10)
+        product_list = ""
 
-# LOGIC TO FILTER PRODUCTS
-if product_list:
-    model = GenerativeModel(
-        model_name=const.VERTEX_AI_MODEL,
-        system_instruction=const.RANK_PRODUCT_SYSTEM_INSTRUCTIONS
-    )
+        if response.status_code == 200:
+            products = response.json()
+            product_list = json.dumps(products, indent=4)
+        else:
+            print(f"API request failed with status code {response.status_code}")
+            print(f"API Response text: {response.text}")
 
-    product_template = '''
-        Products list:
-        {0}
-        
-        Query: {1}
-    '''
-    prompt = product_template.format(product_list, query)
-    response = model.generate_content([prompt])
+        # Filter products using Vertex AI model
+        if product_list:
+            model = GenerativeModel(
+                model_name=const.VERTEX_AI_MODEL,
+                system_instruction=const.FILTER_PRODUCT_SYSTEM_INSTRUCTIONS
+            )
+            product_template = f"Products list:\n{product_list}\n\nQuery: {query}"
+            response = model.generate_content([product_template])
 
-    if not response.text:
-        print("Error: Empty response from the model.")
-    else:
-        try:
-            response_text = json.loads(response.text.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip())
-            result = {
-                "attributes": final_response_data.get("attributes"),
-                "debug": json.loads(product_list),
-                "products": response_text
-            }
-            print(json.dumps(result, indent=4))
+            if response.text:
+                response_text = json.loads(response.text.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip())
+                return {
+                    "attributes": all_attributes,
+                    "debug": json.loads(product_list),
+                    "products": response_text
+                }
+            else:
+                print({"error": "Empty response from the model."})
+    return None
 
-        except json.JSONDecodeError as e:
-            print("Error decoding JSON:", str(e))
-            print("Response text:", response.text)
+# Query input
+query = "Gifts for my 10 year old kid for his birthday. He likes video games, novels, tech gadgets, something creative, travelling and he is also a sports lover. My budget is $150."
 
+# Execute the main function
+result = main(query)
+if result:
+    # Print the result in JSON format
+    print(json.dumps(result, indent=4))
 else:
-    print("No products found.")
+    print(json.dumps({"error": "No result returned."}, indent=4))
