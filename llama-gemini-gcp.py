@@ -153,21 +153,6 @@ else:
     print(f"API request failed with status code {response.status_code}")
     print(f"API Response text: {response.text}")
 
-# # LOGIC TO FILTER PRODUCTS
-# if product_list:
-#     product_template = '''
-#     Products list:
-#     {0}
-    
-#     Query: {1}
-#     '''
-#     prompt = product_template.format(product_list, query)
-
-#     response_text = generate_llama_content(prompt, const.PRODUCT_SYSTEM_INSTRUCTIONS)
-
-#     if response_text:
-#         print(response_text)
-
 # LOGIC TO FILTER PRODUCTS
 model = GenerativeModel(
     model_name=const.VERTEX_AI_MODEL,

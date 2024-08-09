@@ -23,7 +23,8 @@ vertexai.init(project=const.PROJECT_ID, location=const.VERTEX_AI_LOCATION)
 # Initialize the generative model
 model = GenerativeModel(
     model_name=const.VERTEX_AI_MODEL,
-    system_instruction=const.SYSTEM_INSTRUCTIONS
+    system_instruction=const.SYSTEM_INSTRUCTIONS,
+    generation_config=const.GENERATION_CONFIG
 )
 
 # Read the attributes, occasions, and relations from text files
@@ -73,7 +74,8 @@ def to_and_from_http(request):
     # Initialize the generative model
     model = GenerativeModel(
         model_name=const.VERTEX_AI_MODEL,
-        system_instruction=const.SYSTEM_INSTRUCTIONS
+        system_instruction=const.SYSTEM_INSTRUCTIONS,
+        generation_config=const.GENERATION_CONFIG
     )
 
     request_json = request.get_json(silent=True)
@@ -145,7 +147,8 @@ def to_and_from_http(request):
     # Logic to filter products
     model = GenerativeModel(
         model_name=const.VERTEX_AI_MODEL,
-        system_instruction=const.PRODUCT_SYSTEM_INSTRUCTIONS
+        system_instruction=const.PRODUCT_SYSTEM_INSTRUCTIONS,
+        generation_config=const.GENERATION_CONFIG
     )
 
     product_template = '''
@@ -164,22 +167,7 @@ def to_and_from_http(request):
         response_text = json.loads(response.text.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip())
 
 
-        return {"attributes": response_data.get("attributes") ,"products": response_text}
+        return {"attributes": response_data.get("attributes"), "debug": json.loads(product_list) ,"products": response_text}
+
 
     return {"error": "No products found."}
-
-
-
-# curl -m 130 -X POST https://us-central1-kloudstax-429211.cloudfunctions.net/to-and-from \
-# -H "Authorization: bearer $(gcloud auth print-identity-token)" \
-# -H "Content-Type: application/json" \
-# -d "{
-#   \"query\": \"I'm looking for a birthday gift for my niece. She loves history books, arts and crafts supplies and backpacks, but she doesn't like pink colors or unicorn designs. What would be a great choice within a $40 budget?\"
-# }"
-
-
-# curl -m 130 -X POST https://us-central1-kloudstax-429211.cloudfunctions.net/to-and-from \
-# -H "Content-Type: application/json" \
-# -d "{
-#   \"query\": \"I'm looking for a birthday gift for my niece. She loves history books, arts and crafts supplies and backpacks, but she doesn't like pink colors or unicorn designs. What would be a great choice within a $40 budget?\"
-# }"
