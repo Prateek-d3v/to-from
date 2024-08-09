@@ -140,7 +140,7 @@ if final_response_data:
 if product_list:
     model = GenerativeModel(
         model_name=const.VERTEX_AI_MODEL,
-        system_instruction=const.FILTER_PRODUCT_SYSTEM_INSTRUCTIONS
+        system_instruction=const.RANK_PRODUCT_SYSTEM_INSTRUCTIONS
     )
 
     product_template = '''
@@ -155,8 +155,18 @@ if product_list:
     if not response.text:
         print("Error: Empty response from the model.")
     else:
-        response_text = json.loads(response.text.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip())
-        print(json.dumps(response_text, indent=4))
+        try:
+            response_text = json.loads(response.text.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip())
+            result = {
+                "attributes": final_response_data.get("attributes"),
+                "debug": json.loads(product_list),
+                "products": response_text
+            }
+            print(json.dumps(result, indent=4))
+
+        except json.JSONDecodeError as e:
+            print("Error decoding JSON:", str(e))
+            print("Response text:", response.text)
 
 else:
     print("No products found.")
