@@ -71,7 +71,8 @@ def generate_llama_content(prompt, system_instruction):
                 "role": "user",
                 "content": prompt
             }
-        ]
+        ],
+        "temperature": 0.1
     }
 
     response = requests.post(url, headers=headers, data=json.dumps(payload))
