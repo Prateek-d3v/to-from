@@ -16,6 +16,14 @@ user_query = st.text_input("Enter your query:")
 # User input for Bearer Token
 bearer_token = st.text_input("Enter your Bearer Token:", type="password")
 
+# Dropdown to select the Cloud Function URL
+url_options = {
+    "Gemini - Split Approach": "https://us-central1-kloudstax-429211.cloudfunctions.net/gemini-gemini",
+    "Gemini - Basic Approach": "https://us-central1-kloudstax-429211.cloudfunctions.net/to-and-from"
+}
+selected_url_name = st.selectbox("Select Cloud Function", list(url_options.keys()))
+gcf_url = url_options[selected_url_name]
+
 # Function to fetch product details, including images
 def fetch_product_details(product_id):
     try:
@@ -40,16 +48,13 @@ def decodeURIComponent(url):
 # Button to send the request
 if st.button("Send Request"):
     if user_query and bearer_token:
-        # Define the Google Cloud Function URL
-        gcf_url = f"https://us-central1-kloudstax-429211.cloudfunctions.net/to-and-from?query={user_query}"
-
         # Set up headers with Bearer Token
         headers = {
             "Authorization": f"Bearer {bearer_token}"
         }
 
         # Send the request with the headers
-        response = requests.get(gcf_url, headers=headers)
+        response = requests.get(f"{gcf_url}?query={user_query}", headers=headers)
 
         if response.status_code == 200:
             # Parse the JSON response
