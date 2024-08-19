@@ -1,29 +1,13 @@
 import os
-import vertexai
-from vertexai.generative_models import GenerativeModel
-import constants as const
-import helper as helper
+import openai  # Import OpenAI's library
 import json
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import constants as const
+import helper as helper
 
-# Set the environment variable for Google Application Credentials
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = const.SA_ACCOUNT
-
-# Suppress gRPC logging messages
-os.environ['GRPC_VERBOSITY'] = 'ERROR'
-
-# Optionally, suppress TensorFlow logging messages
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-
-# Initialize Vertex AI
-vertexai.init(project=const.PROJECT_ID, location=const.VERTEX_AI_LOCATION)
-
-# Initialize the generative model
-model = GenerativeModel(
-    model_name=const.VERTEX_AI_MODEL,
-    system_instruction=const.SYSTEM_INSTRUCTIONS
-)
+# Set your OpenAI API key
+openai.api_key = const.OPENAI_API_KEY
 
 # Read the attributes, occasions, and relations from text files
 attributes = helper.read_text_file(const.ATTRIBUTES_PATH)
@@ -50,6 +34,10 @@ Relations:
 Query: {3}
 """
 
+# Function to extract IDs based on names
+def get_ids(names, data, key_name):
+    return [item["id"] for name in names for item in data if item[key_name] == name]
+
 # Function to split attributes into smaller parts based on number of elements
 def split_attributes(attributes, num_splits):
     split_size = len(attributes) // num_splits
@@ -58,17 +46,25 @@ def split_attributes(attributes, num_splits):
 # Split attributes into smaller parts
 attributes_split = split_attributes(attributes, 21)
 
-# Function to extract IDs based on names
-def get_ids(names, data, key_name):
-    return [item["id"] for name in names for item in data if item[key_name] == name]
+# Function to call the OpenAI GPT model and generate a response
+def generate_gpt_content(prompt, system_instructions):
+    response = openai.ChatCompletion.create(
+        model="gpt-4o-mini",  # or another GPT model you prefer
+        messages=[
+            {"role": "system", "content": system_instructions},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.1
+    )
+    return response.choices[0].message['content']
 
 # Function to process each part of attributes and generate a response
-def process_attributes_part(attributes_part):
+def process_attributes_part(attributes_part, query):
     prompt = prompt_template.format(attributes_part, occasions, relations, query)
-    response = model.generate_content([prompt])
+    response_text = generate_gpt_content(prompt, const.SYSTEM_INSTRUCTIONS)
 
-    if response.text:
-        response_text = response.text.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip()
+    if response_text:
+        response_text = response_text.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip()
         try:
             # Parse the JSON response
             response_data = json.loads(response_text)
@@ -86,7 +82,7 @@ def main(query):
 
     # Process the attribute splits concurrently
     with ThreadPoolExecutor(max_workers=21) as executor:
-        futures = [executor.submit(process_attributes_part, attributes_part) for attributes_part in attributes_split]
+        futures = [executor.submit(process_attributes_part, attributes_part, query) for attributes_part in attributes_split]
         for future in as_completed(futures):
             result = future.result()
             if result:
@@ -137,17 +133,13 @@ def main(query):
             print(f"API request failed with status code {response.status_code}")
             print(f"API Response text: {response.text}")
 
-        # Filter products using Vertex AI model
+        # Filter products using OpenAI GPT model with different instructions
         if product_list:
-            model = GenerativeModel(
-                model_name=const.VERTEX_AI_MODEL,
-                system_instruction=const.RANK_PRODUCT_SYSTEM_INSTRUCTIONS
-            )
             product_template = f"Products list:\n{product_list}\n\nQuery: {query}"
-            response = model.generate_content([product_template])
+            response_text = generate_gpt_content(product_template, const.RANK_PRODUCT_SYSTEM_INSTRUCTIONS)
 
-            if response.text:
-                response_text = json.loads(response.text.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip())
+            if response_text:
+                response_text = json.loads(response_text.replace('“', '"').replace('”', '"').replace('```', '').replace('json', '').strip())
                 return {
                     "attributes": all_attributes,
                     "debug": json.loads(product_list),
